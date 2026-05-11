@@ -1,0 +1,53 @@
+:root {
+    --kpop-pink: #ffafcc;
+    --kpop-purple: #cdb4db;
+    --kpop-dark: #2d3436;
+    --kpop-gradient: linear-gradient(45deg, #ffafcc, #a2d2ff);
+}
+body {
+    background-color: #f8f9fa;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar {
+    background: var(--kpop-gradient) !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.navbar-brand, .nav-link {
+    color: white !important;
+    font-weight: 600;
+}
+.kpop-card {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.kpop-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(255, 175, 204, 0.3);
+}
+
+.price-tag {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ef476f;
+}
+.btn-kpop {
+    background: var(--kpop-gradient);
+    border: none;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-weight: 600;
+    transition: opacity 0.3s;
+}
+.btn-kpop:hover {
+    opacity: 0.9;
+    color: white;
+    box-shadow: 0 4px 15px rgba(162, 210, 255, 0.5);
+}
+.form-control:focus {
+    border-color: var(--kpop-pink);
+    box-shadow: 0 0 0 0.25 row rgba(255, 175, 204, 0.25);
+}
